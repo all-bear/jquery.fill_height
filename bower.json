@@ -1,0 +1,28 @@
+{
+  "name": "fill_height",
+  "version": "0.1.0",
+  "authors": [
+    "Oleh Birjukov <ol.birjukov@gmail.com>"
+  ],
+  "description": "JQuery plugin that allows you to stretch an element height to fill all available space of parent",
+  "main": "jquery.fill_height.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "jquery",
+    "jquery plugin",
+    "fill space",
+    "fill height",
+    "stretch height"
+  ],
+  "license": "MIT",
+  "homepage": "https://gitlab.com/jquery_g/fill-height.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
