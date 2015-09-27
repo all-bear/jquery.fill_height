@@ -19,7 +19,7 @@ $.fn.fillHeight.defaults = {
 ```
 * autoRun - if true fillHeight will be applied at document ready to all elements with selector
 * selector - see autoRun option
-* updateEvent - plugin observe resize event for window and this event on element for updating height
+* updateEvent - plugin observe resize and this event on window for updating height
 
 License
 ----

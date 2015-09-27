@@ -41,10 +41,11 @@
             }
 
             updateHeight(el, opts);
-            $(window).resize(bindedUpdate);
-            el.bind(opts.updateEvent, bindedUpdate);
+            $(window).resize(bindedUpdate).bind(opts.updateEvent, bindedUpdate);
             el.data(initDataKey, true);
         });
+
+        return this;
     };
 
     $.fn.fillHeight.defaults = {
