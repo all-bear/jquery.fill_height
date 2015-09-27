@@ -1,6 +1,4 @@
 (function ($) {
-    var initDataKey = 'fill_height_init';
-
     function setHeight(el, height) {
         $.each(['padding-top', 'padding-bottom', 'margin-top', 'margin-bottom'], function (i, prop) {
             height -= parseInt(el.css(prop));
@@ -32,17 +30,7 @@
         var opts = $.extend({}, $.fn.fillHeight.defaults, options);
 
         this.each(function(i, el) {
-            el = $(el);
-
-            var bindedUpdate = updateHeight.bind(this, el, opts);
-
-            if (el.data(initDataKey)) {
-                return;
-            }
-
-            updateHeight(el, opts);
-            $(window).resize(bindedUpdate).bind(opts.updateEvent, bindedUpdate);
-            el.data(initDataKey, true);
+            updateHeight($(el), opts);
         });
 
         return this;
@@ -54,9 +42,10 @@
         updateEvent: 'fill-height-update'
     };
 
-    $(document).ready(function () {
+    $(document).ready(function() {
         if ($.fn.fillHeight.defaults.autoRun) {
             updateAll();
         }
+        $(window).bind('resize', updateAll).bind($.fn.fillHeight.defaults.updateEvent, updateAll);
     });
 })(jQuery);
