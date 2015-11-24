@@ -19,7 +19,7 @@
       "url": "http://malsup.github.com/mit-license.txt"
     }
   ],
-  "homepage": "https://gitlab.com/jquery_g/fill-height.git",
+  "homepage": "https://github.com/all-bear/jquery.fill_height",
   "dependencies": {
     "jquery": ">=1.5"
   },
