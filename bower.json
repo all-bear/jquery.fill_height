@@ -17,7 +17,7 @@
     "stretch height"
   ],
   "license": "MIT",
-  "homepage": "https://gitlab.com/jquery_g/fill-height.git",
+  "homepage": "https://github.com/all-bear/jquery.fill_height",
   "ignore": [
     "**/.*",
     "node_modules",
